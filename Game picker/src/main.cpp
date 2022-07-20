@@ -20,8 +20,8 @@ int main()
     "theif simulator", "twelve minutes", "unpacking", "while true", "worksop simulator"};
      
     // gets the size of the array (by deviding the total byte size by the size of one item)
-    int index = sizeof(games) / sizeof(games[0]);
     // this variable is later used to determine the maximum value of the randomizer range
+    int index = sizeof(games) / sizeof(games[0]);
     
     // using the current time as seed for the randomizer
     srand(time(0));
