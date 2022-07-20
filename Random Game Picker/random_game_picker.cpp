@@ -18,7 +18,9 @@ int main()
      
     //gets the size of the array (by deviding the total byte size by the size of one item)
     int index = sizeof(games) / sizeof(games[0]);
-
+    /*      ^ 
+            This variable is later used to determine the maximum value of the randomizer range */
+    
     //Using the current time as seed for the randomizer 
     srand(time(0));
 
