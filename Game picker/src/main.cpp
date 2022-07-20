@@ -1,11 +1,8 @@
 // include libraries
-#include <iostream> // used for a basic input/output system
-#include <cstdlib> // used for generating random numbers
-#include <time.h> // used for date and time
+#include <iostream> // the basic input/output system
+#include <cstdlib> //  generating random numbers
+#include <time.h> // for date and time
 
-// std namespace. this would save a lot of time
-// we don't have to put std:: behind every member 
-// of stand library headers that we're gonna access
 using namespace std;
 
 // main function
@@ -26,15 +23,15 @@ int main()
     int index = sizeof(games) / sizeof(games[0]);
     // this variable is later used to determine the maximum value of the randomizer range
     
-    // using the current time as seed for the generating a random number
+    // using the current time as seed for the randomizer
     srand(time(0));
 
     // prints the header of the message(if in for-loop, it would have been printed many times)
     cout << "Your games for this week are:" << endl;
 
-    // printing the game based on randomly generated index
+    // printing the chosen game based on randomly generated index
     for(int i = 0; i < 3; i++) { 
-        // generates a random number from 0 to last item index
+        // generates a random number from 0 to the last item index
         int selection = rand() % index;
 
         // prints the name
